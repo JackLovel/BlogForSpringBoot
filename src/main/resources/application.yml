@@ -1,0 +1,28 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  mvc:
+    date-format: yyyy-MM-dd
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  messages:
+    basename: i18n/messages
+
+  jpa:
+    hibernate:
+      ddl-auto: update # update: 根据 Model 生成对应的表格
+    show-sql: true
+
+#  servlet:
+#    multipart:
+#      max-file-size: 3GB # 文件上传大小
+#      max-request-size: 3GB
+
+comment.avatar: /images/avatar.png
+
+server:
+  port: 8080
